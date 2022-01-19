@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/27deu50ly78p1pel?svg=true)](https://ci.appveyor.com/project/holyotter/aqahw2-2)
