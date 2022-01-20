@@ -32,5 +32,4 @@ public class TestOrderForm {
         $(withText("Забронировать")).click();
         $(withText("Встреча успешно забронирована на")).shouldBe(visible, Duration.ofSeconds(15));
     }
-    // коммент для коммита
 }
