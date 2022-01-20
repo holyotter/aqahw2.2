@@ -1,7 +1,5 @@
 package ru.netology.web;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
@@ -15,14 +13,9 @@ public class TestOrderForm {
 
     public int days;
 
-    @BeforeEach
-    public void openPage() {
-        Configuration.holdBrowserOpen = true;
-        open("http://localhost:9999");
-    }
-
     @Test
     public void shouldAccepted() {
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Краснодар");
         $("[data-test-id=date] [placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id=date] [placeholder='Дата встречи']").setValue(DateMeeting.dataInput(days));
